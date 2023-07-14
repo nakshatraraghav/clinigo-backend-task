@@ -1,0 +1,164 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "clinigo-task",
+    "dateExported": "2023-07-14T13:13:55.933Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f8cbd30e-d678-4d7a-8693-058e9acc5145",
+            "name": "Filter Books",
+            "containerId": "118eea02-cded-4fe2-9f81-bf00f4086f8e",
+            "created": "2023-07-14T13:08:46.847Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "118eea02-cded-4fe2-9f81-bf00f4086f8e",
+            "name": "GET Books",
+            "containerId": "",
+            "created": "2023-07-14T13:10:05.396Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e4753943-8cc9-43bd-ab36-4af1fb615408",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "118eea02-cded-4fe2-9f81-bf00f4086f8e",
+            "name": "get single book",
+            "url": "localhost:3000/api/books/64b14064b9febe7faad4c394",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-14T13:07:54.897Z",
+            "modified": "2023-07-14T13:08:07.785Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "742dd7d3-2058-4d36-bfe5-6d69a85813bb",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "118eea02-cded-4fe2-9f81-bf00f4086f8e",
+            "name": "get all books",
+            "url": "localhost:3000/api/books",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-14T13:08:20.220Z",
+            "modified": "2023-07-14T13:08:26.138Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fde5bf4a-c5ca-470a-ac0c-41a462b03dde",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "f8cbd30e-d678-4d7a-8693-058e9acc5145",
+            "name": "Filter By Genre",
+            "url": "localhost:3000/api/books?genre=Classics",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-14T13:09:02.239Z",
+            "modified": "2023-07-14T13:09:14.407Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "genre",
+                    "value": "Classics",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fc482fdd-0cd2-4d7e-8d7e-3a4ac6655f13",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "f8cbd30e-d678-4d7a-8693-058e9acc5145",
+            "name": "Filter By Year",
+            "url": "localhost:3000/api/books?year=1900",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-14T13:09:22.245Z",
+            "modified": "2023-07-14T13:09:30.478Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "year",
+                    "value": "1900",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "877b9cbe-fdf8-4722-9e7c-1fa424a2cf47",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "f8cbd30e-d678-4d7a-8693-058e9acc5145",
+            "name": "Filter By Rating",
+            "url": "localhost:3000/api/books?rating=4.5",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-14T13:09:42.620Z",
+            "modified": "2023-07-14T13:09:50.921Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "rating",
+                    "value": "4.5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2ec81568-7d65-49c4-99f8-94af1cf0facc",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "",
+            "name": "Create Book",
+            "url": "localhost:3000/api/books",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-07-14T13:10:20.126Z",
+            "modified": "2023-07-14T13:12:28.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"The Hidden Key\",\n  \"author\": \"Sarah Thompson\",\n  \"genre\": \"Mystery\",\n  \"year\": 2010,\n  \"rating\": 4.2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "770a403a-d9fd-42be-99c5-73a8f938a07c",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "",
+            "name": "Update Book",
+            "url": "localhost:3000/api/books/64b149bd28f9ab6cc03c995b",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-07-14T13:12:42.840Z",
+            "modified": "2023-07-14T13:13:15.541Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"year\": 2012,\n  \"rating\": 4.5\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d98f354-cded-4d47-bfa8-2d47b6596a1b",
+            "colId": "1eace735-0abe-40d4-8a1d-48c618f2f37d",
+            "containerId": "",
+            "name": "Delete Book",
+            "url": "localhost:3000/api/books/64b149bd28f9ab6cc03c995b",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-07-14T13:13:35.899Z",
+            "modified": "2023-07-14T13:13:44.210Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
