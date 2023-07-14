@@ -6,6 +6,12 @@ This is a simple RESTful API for managing a collection of books. It allows users
 
 The Books API is a simple RESTful API that allows users to manage a collection of books. It provides endpoints for performing CRUD (Create, Read, Update, Delete) operations on books stored in a MongoDB database. The API is built using Node.js and utilizes the Express framework for handling HTTP requests and routing.
 
+## Deployment
+
+Project has been deployed on render.com
+
+- [link](https://clinigo-backend-task.onrender.com/)
+
 ## Installation
 
 To install and run the Sentrimetric API, follow these steps:
